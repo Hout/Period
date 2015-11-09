@@ -107,6 +107,8 @@ y2000 == Period(startDate: y2000Start, endDate: y2000End)! // true
 
 ## Requirements
 
+Not for now.
+
 ## Installation
 
 Period is available through [CocoaPods](http://cocoapods.org). To install
