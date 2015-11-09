@@ -10,7 +10,7 @@
 /// The period class represents a period of time. It is in absolute time so it has no references to calendric
 /// properties.
 ///
-public class Period {
+public struct Period {
 
     /// Start date of the period
     /// - Note: the start date is within the period.
@@ -51,7 +51,7 @@ public class Period {
     ///
     /// - Returns: a new instance of Period or `nil` is `endDate` is earlier than `startDate`
     ///
-    public convenience init?(startDate aStartDate: NSDate, endDate anEndDate: NSDate) {
+    public init?(startDate aStartDate: NSDate, endDate anEndDate: NSDate) {
 
         let duration = anEndDate.timeIntervalSinceReferenceDate - aStartDate.timeIntervalSinceReferenceDate
         guard duration >= 0 else {
