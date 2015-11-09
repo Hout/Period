@@ -161,8 +161,114 @@ class PeriosSpec: QuickSpec {
                         expect(period2 >= period3) == true
                     }
                 }
+            }
+
+            context("date inPeriod") {
+
+                let period = Period(startDate: startDate, duration: duration)
+
+                it("should return true when date is equal to start date") {
+                    expect(period.startDate.inPeriod(period)) == true
+                }
+
+                it("should return true when date is equal to end date") {
+                    expect(period.endDate.inPeriod(period)) == true
+                }
+
+                it("should return true when date is in between start date and end date") {
+                    let date = NSDate(timeInterval: duration / 2, sinceDate: startDate)
+                    expect(date.inPeriod(period)) == true
+                }
+
+                it("should return false when date is before start date") {
+                    let date = NSDate(timeInterval: -duration, sinceDate: startDate)
+                    expect(date.inPeriod(period)) == false
+                }
+
+                it("should return false when date is after end date") {
+                    let date = NSDate(timeInterval: duration, sinceDate: period.endDate)
+                    expect(date.inPeriod(period)) == false
+                }
+
+            }
+
+            context("period inPeriod") {
+
+                let startDate2 = NSDate(timeInterval: duration + 1, sinceDate: startDate)
+                let startDate3 = NSDate(timeInterval: duration / 2, sinceDate: startDate)
+                let period1 = Period(startDate: startDate, duration: duration)
+                let period2 = Period(startDate: startDate2, duration: duration) // After period1
+                let period3 = Period(startDate: startDate3, duration: duration) // overlapping period1 and period2
+                let period4 = Period(startDate: startDate3, duration: duration / 3) // in period1
+
+                it("should return true when periods are equal") {
+                    expect(period1.inPeriod(period1)) == true
+                }
+
+                it("should return false when receiver starts before and ends after test period") {
+                    expect(period1.inPeriod(period4)) == false
+                }
+
+                it("should return false when receiver is within test period") {
+                    expect(period4.inPeriod(period1)) == true
+                }
+
+                it("should return false when receiver is completely later than test period") {
+                    expect(period2.inPeriod(period1)) == false
+                }
+
+                it("should return false when receiver is completely earlier than test period") {
+                    expect(period1.inPeriod(period2)) == false
+                }
+                
+                it("should return false when receiver overlaps and is later than test period") {
+                    expect(period3.inPeriod(period1)) == false
+                }
+
+                it("should return false when receiver overlaps and is earlier than test period") {
+                    expect(period3.inPeriod(period2)) == false
+                }
                 
             }
-        }
+
+            context("period oeverlapsPeriod") {
+
+                let startDate2 = NSDate(timeInterval: duration + 1, sinceDate: startDate)
+                let startDate3 = NSDate(timeInterval: duration / 2, sinceDate: startDate)
+                let period1 = Period(startDate: startDate, duration: duration)
+                let period2 = Period(startDate: startDate2, duration: duration) // After period1
+                let period3 = Period(startDate: startDate3, duration: duration) // overlapping period1 and period2
+                let period4 = Period(startDate: startDate3, duration: duration / 3) // in period1
+
+                it("should return true when periods are equal") {
+                    expect(period1.overlapsPeriod(period1)) == true
+                }
+
+                it("should return true when receiver starts before and ends after test period") {
+                    expect(period1.overlapsPeriod(period4)) == true
+                }
+
+                it("should return false when receiver is within test period") {
+                    expect(period4.overlapsPeriod(period1)) == true
+                }
+
+                it("should return false when receiver is completely later than test period") {
+                    expect(period2.overlapsPeriod(period1)) == false
+                }
+
+                it("should return false when receiver is completely earlier than test period") {
+                    expect(period1.overlapsPeriod(period2)) == false
+                }
+
+                it("should return true when receiver overlaps and is later than test period") {
+                    expect(period3.overlapsPeriod(period1)) == true
+                }
+
+                it("should return true when receiver overlaps and is earlier than test period") {
+                    expect(period3.overlapsPeriod(period2)) == true
+                }
+                
+            }
+}
     }
 }

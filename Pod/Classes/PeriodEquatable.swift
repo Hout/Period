@@ -11,6 +11,8 @@
 //
 extension Period : Equatable {}
 
+
+/// Implements the equatable protocol by comparing for equality
 public func ==(left: Period, right: Period) -> Bool {
 
     // First check if they are not the same objects

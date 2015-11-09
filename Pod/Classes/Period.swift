@@ -63,7 +63,7 @@ public class Period {
     /// End date of the period.
     /// - Note: the end date is within the period.
     ///
-    var endDate: NSDate {
+    public var endDate: NSDate {
         return NSDate(timeInterval: duration, sinceDate: startDate)
     }
 }
