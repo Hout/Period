@@ -18,7 +18,7 @@ Various operations are implemented e.g.:
 ## Usage
 
 Check the included playground for examples:
-``Swift
+````Swift
 //: Playground - noun: a place where people can play
 
 import Foundation
@@ -103,7 +103,7 @@ y2000 == y2001 // false
 y2000 == y2000 // true
 y2000 == Period(startDate: y2000Start, endDate: y2000End)! // true
 
-``
+````
 
 ## Requirements
 
