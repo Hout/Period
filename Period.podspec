@@ -35,7 +35,9 @@ Various operations are implemented e.g.:
   s.source           = { :git => "https://github.com/Hout/Period.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.platform     = :ios, '8.0'
+  s.ios.deployment_target   = '9.0'
+  s.osx.deployment_target   = '10.10'
+  s.tvos.deployment_target  = '9.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
