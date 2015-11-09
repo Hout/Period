@@ -15,6 +15,7 @@
 /* Begin PBXFileReference section */
 		02781A73E9F0FD18FEB7BD0F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		1FDEF9641BF0E73F002EA69E /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .travis.yml; path = ../.travis.yml; sourceTree = "<group>"; };
+		1FDEF9681BF0EDB4002EA69E /* PeriodPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PeriodPlayground.playground; sourceTree = "<group>"; };
 		23BA34FC0DD35553CCBB657D /* Period.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Period.podspec; path = ../Period.podspec; sourceTree = "<group>"; };
 		4C235AE00DA194440A94F970 /* Pods-Period_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Period_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Period_Tests/Pods-Period_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* Period_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Period_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +90,7 @@
 				02781A73E9F0FD18FEB7BD0F /* README.md */,
 				F6124791B30859DE462736A8 /* LICENSE */,
 				1FDEF9641BF0E73F002EA69E /* .travis.yml */,
+				1FDEF9681BF0EDB4002EA69E /* PeriodPlayground.playground */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";

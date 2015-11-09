@@ -1,24 +1,3 @@
-# Period
-
-[![CI Status](http://img.shields.io/travis/Hout/Period.svg?style=flat)](https://travis-ci.org/Hout/Period)
-[![Version](https://img.shields.io/cocoapods/v/Period.svg?style=flat)](http://cocoapods.org/pods/Period)
-[![License](https://img.shields.io/cocoapods/l/Period.svg?style=flat)](http://cocoapods.org/pods/Period)
-[![Platform](https://img.shields.io/cocoapods/p/Period.svg?style=flat)](http://cocoapods.org/pods/Period)
-
-The `Period` class represents a period of time after an NSDate object.
-It is in absolute time so it has no references to calendrical properties.
-Various operations are implemented e.g.:
-- check whether an NSDate instance lies within a Period instance.
-- check whether an Period instance lies within a Period instance.
-- check whether an Period instance overlaps a Period instance.
-- check whether an Period instance is earlier/later than a Period instance without overlap (< or > operators).
-- check whether an Period instance is earlier/later than or overlaps than a Period instance (<= or >= operators).
-- implements Equatable & Comparable protocols.
-
-## Usage
-
-Check the included playground for examples:
-``Swift
 //: Playground - noun: a place where people can play
 
 import Foundation
@@ -103,24 +82,5 @@ y2000 == y2001 // false
 y2000 == y2000 // true
 y2000 == Period(startDate: y2000Start, endDate: y2000End)! // true
 
-``
 
-## Requirements
-
-## Installation
-
-Period is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod "Period"
-```
-
-## Author
-
-Jeroen Houtzager, pls contact me through [GitHub](https://github.com/Hout)
-
-## License
-
-Period is available under the MIT license. See the LICENSE file for more info.
 
