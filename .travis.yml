@@ -6,5 +6,9 @@ osx_image: xcode7
 language: objective-c
 cache: cocoapods
 podfile: Example/Podfile
-xcode_project: Example/Period.xcworkspace
-xcode_scheme: Period-Example
+before_install:
+- gem update cocoapods # Since Travis is not always on latest version
+- pod install --project-directory=Example
+script:
+- set -o pipefail && xcodebuild test -workspace Example/Period.xcworkspace -scheme Period-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
+- pod lib lint --quick
