@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FDEF9651BF0E73F002EA69E /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 1FDEF9641BF0E73F002EA69E /* .travis.yml */; };
 		607FACEC1AFB9204008FA782 /* PeriodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* PeriodTests.swift */; };
 		A896F67072F1CBF7BF586243 /* Pods_Period_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DAAE96B046657C27A39869D /* Pods_Period_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		02781A73E9F0FD18FEB7BD0F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1FDEF9641BF0E73F002EA69E /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .travis.yml; path = ../.travis.yml; sourceTree = "<group>"; };
 		23BA34FC0DD35553CCBB657D /* Period.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Period.podspec; path = ../Period.podspec; sourceTree = "<group>"; };
 		4C235AE00DA194440A94F970 /* Pods-Period_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Period_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Period_Tests/Pods-Period_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* Period_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Period_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +88,7 @@
 				23BA34FC0DD35553CCBB657D /* Period.podspec */,
 				02781A73E9F0FD18FEB7BD0F /* README.md */,
 				F6124791B30859DE462736A8 /* LICENSE */,
+				1FDEF9641BF0E73F002EA69E /* .travis.yml */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FDEF9651BF0E73F002EA69E /* .travis.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

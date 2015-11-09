@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/Period.svg?style=flat)](http://cocoapods.org/pods/Period)
 [![Platform](https://img.shields.io/cocoapods/p/Period.svg?style=flat)](http://cocoapods.org/pods/Period)
 
+The period class represents a period of time. It is in absolute time so it has no references to calendrical properties.
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -22,8 +24,9 @@ pod "Period"
 
 ## Author
 
-Hout, houtzager@gmail.com
+Jeroen Houtzager, pls contact me through [GitHub](https://github.com/Hout)
 
 ## License
 
 Period is available under the MIT license. See the LICENSE file for more info.
+
