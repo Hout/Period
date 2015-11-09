@@ -10,6 +10,7 @@
 		1FDEF9651BF0E73F002EA69E /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 1FDEF9641BF0E73F002EA69E /* .travis.yml */; };
 		607FACEC1AFB9204008FA782 /* PeriodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* PeriodTests.swift */; };
 		A896F67072F1CBF7BF586243 /* Pods_Period_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DAAE96B046657C27A39869D /* Pods_Period_Tests.framework */; };
+		DF1BF91E068E0005A20DBD14 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D926E4AF889FEBDDB4C070 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		607FACEB1AFB9204008FA782 /* PeriodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodTests.swift; sourceTree = "<group>"; };
 		92EA2D8C02DA87CAE522413E /* Pods-Period_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Period_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Period_Tests/Pods-Period_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9DAAE96B046657C27A39869D /* Pods_Period_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Period_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9D926E4AF889FEBDDB4C070 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6124791B30859DE462736A8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -32,6 +34,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A896F67072F1CBF7BF586243 /* Pods_Period_Tests.framework in Frameworks */,
+				DF1BF91E068E0005A20DBD14 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				9DAAE96B046657C27A39869D /* Pods_Period_Tests.framework */,
+				D9D926E4AF889FEBDDB4C070 /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -184,7 +188,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Period_Tests/Pods-Period_Tests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2A2B7F0EFA572141E5008C53 /* Check Pods Manifest.lock */ = {
